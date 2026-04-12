@@ -3,12 +3,12 @@ package com.bynfor.productInfo.service;
 import com.bynfor.service.ItemList;
 import com.bynfor.service.UpdateItemsResp;
 import java.util.List;
-import org.lognet.springboot.grpc.GRpcService;
+import net.devh.boot.grpc.server.service.GrpcService;
 import com.bynfor.service.InventoryServiceGrpc.InventoryServiceImplBase;
 import com.bynfor.service.Item;
 import io.grpc.stub.StreamObserver;
 
-@GRpcService
+@GrpcService
 public class Inventory extends InventoryServiceImplBase {
 
   @Override
